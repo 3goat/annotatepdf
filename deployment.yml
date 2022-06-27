@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: back-end
-          image: 328518371633.dkr.ecr.us-east-1.amazonaws.com/jenkin-pipeline-1:latest
+          image: 328518371633.dkr.ecr.us-east-1.amazonaws.com/jenkins-pipeline-2:latest
           ports:
             - containerPort: 3000
