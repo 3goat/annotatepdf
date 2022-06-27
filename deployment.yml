@@ -18,6 +18,7 @@ spec:
           image: 328518371633.dkr.ecr.us-east-1.amazonaws.com/jenkins-pipeline-2:latest
           ports:
             - containerPort: 3000
+          imagePullPolicy: Always
 ---
 apiVersion: v1
 kind: Service
