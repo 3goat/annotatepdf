@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web
+  name: test
   namespace: default
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: web
+      app: test
   template:
     metadata:
       labels:
-        app: web
+        app: test
     spec:
       containers:
         - name: back-end
@@ -22,11 +22,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: web
+  name: test
 spec:
   type: LoadBalancer
   ports:
     - port: 80
       targetPort: 3000
   selector:
-    app: web
+    app: test
